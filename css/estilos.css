@@ -1,0 +1,47 @@
+body {
+	background-color: #18163C;
+	margin: 0;
+	display: flex;
+	min-height: 100vh;
+}
+
+.container {
+	margin: auto;
+	width: 1200px;
+	height: 600px;
+	position: relative;
+	overflow: hidden;
+	border: transparent;
+}
+
+.container:hover {
+	border: 10px solid;
+	border-image: linear-gradient(90deg, rgb(7, 5, 120) 0%, rgb(138, 0, 0) 80%) round;
+	border-image-slice: 1;
+}
+
+.container:hover .logo {
+	transform: scale(2);
+}
+
+.container:hover .back {
+	transform: translateY(100px) scale(1.5);
+
+}
+
+.logo {
+	width: 250px;
+	position: absolute;
+	left: 450px;
+	top: 250px;
+	transform: scale(0);
+}
+
+.back {
+	width: 1200px;
+	height: 600px;
+}
+
+.transition {
+	transition: 1s;
+}
